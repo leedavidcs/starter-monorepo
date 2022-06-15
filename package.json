@@ -10,10 +10,13 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "services:stop": "docker-compose down",
+    "turbo": "turbo"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "@app/eslint-config-custom": "workspace:*",
+    "@app/tailwindcss": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },

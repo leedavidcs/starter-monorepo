@@ -1,0 +1,12 @@
+{
+	"extends": "@app/tsconfig/react-library.json",
+	"include": ["src", "types.d.ts"],
+	"compilerOptions": {
+		"downlevelIteration": true,
+		"lib": ["dom"],
+		"moduleResolution": "node",
+		"rootDir": "src",
+		"outDir": "dist",
+		"jsx": "react"
+	}
+}

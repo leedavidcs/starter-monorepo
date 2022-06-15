@@ -1,5 +1,18 @@
 {
-  "extends": "tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"extends": "@app/tsconfig/nextjs.json",
+	"include": [
+		"next-env.d.ts",
+		"types.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"../../packages/server/src/graphql/nexus/generated/typegen.gen.d.ts"
+	],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@app/server": ["../../packages/server/src/index"],
+			"@app/server/graphql/*": ["../../packages/server/src/graphql/*"],
+			"@app/server/prisma": ["../../packages/server/prisma"]
+		}
+	}
 }

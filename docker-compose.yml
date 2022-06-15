@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      # Accessible from the host at port :3306
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql_root
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: app_db
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
