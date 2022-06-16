@@ -11,7 +11,7 @@ importers:
     devDependencies:
       '@app/eslint-config-custom': link:packages/eslint-config-custom
       '@app/tailwindcss': link:packages/tailwindcss
-      prettier: 2.7.0
+      prettier: 2.7.1
       turbo: 1.2.16
 
   apps/web:
@@ -262,6 +262,7 @@ importers:
 
   packages/tailwindcss:
     specifiers:
+      '@tailwindcss/aspect-ratio': ^0.4.0
       '@tailwindcss/forms': 0.5.2
       '@tailwindcss/line-clamp': 0.4.0
       tailwindcss: 2.2.19
@@ -270,6 +271,7 @@ importers:
       tailwindcss: 2.2.19
       twin.macro: 2.8.2
     devDependencies:
+      '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
       '@tailwindcss/forms': 0.5.2_tailwindcss@2.2.19
       '@tailwindcss/line-clamp': 0.4.0_tailwindcss@2.2.19
 
@@ -2065,6 +2067,14 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       defer-to-connect: 1.1.3
+    dev: true
+
+  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 2.2.19
     dev: true
 
   /@tailwindcss/forms/0.5.2_tailwindcss@2.2.19:
@@ -7283,8 +7293,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /prettier/2.7.0:
-    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
