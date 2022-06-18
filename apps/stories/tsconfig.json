@@ -10,6 +10,8 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
+			"@app/www": ["../../apps/www/src/index"],
+			"@app/www/*": ["../../apps/www/*"],
 			"@app/server": ["../../packages/server/src/index"],
 			"@app/server/graphql/*": ["../../packages/server/src/graphql/*"],
 			"@app/server/prisma": ["../../packages/server/prisma"],
